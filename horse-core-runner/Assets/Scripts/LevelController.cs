@@ -34,7 +34,7 @@ public class LevelController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
+		GenerateBlock();
 	}
 	
 	// Update is called once per frame
@@ -54,7 +54,7 @@ public class LevelController : MonoBehaviour {
         blockParent.position = new Vector3(blockParent.position.x - newPosX, blockParent.position.y, blockParent.position.z);
         blockProgress += newPosX;
         levelLengthProgress += newPosX;
-        // Debug.Log(blockProgress);
+        Debug.Log(blockProgress);
     }
 
     void GenerateBlock()
